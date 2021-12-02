@@ -3,27 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <header>
+      <h1 class="titleCard"> 🃏 Sorting cards! 🃏</h1>
+      <h2 class="cardSymbol">Draw the ammount of cards you want to sort and let's see what happens!</h2>
       </div>
-    </div>
+      <div class="buttonBox">
+        <form action="">
+          <input
+            type="number"
+            id="cardInput"
+            placeholder="How many cards?"
+            class="inputNumber"
+          />
+        </form>
+        <button
+          type="button"
+          id="Draw"
+          class="button-style btn btn-dark p-1"
+          value="Draw"
+        >
+          Draw
+        </button>
+        <button
+          type="button"
+          id="bubbleSort"
+          class="button-style btn btn-dark p-1"
+          value="Bubble Sort"
+        >
+          Bubble Sort
+        </button>
+        <button
+          type="button"
+          id="selectSort"
+          class="button-style btn btn-dark p-1"
+          value="Select Sort"
+        >
+          Select
+        </button>
+      </div>
+    </header>
+    <section>
+      <div id="cardList"></div>
+      <div id="cardListOrdered"></div>
+    </section>
   </body>
 </html>
